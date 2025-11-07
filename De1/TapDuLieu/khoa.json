@@ -1,0 +1,25 @@
+[
+  {
+    "maKhoa": "CNTT",
+    "tenKhoa": "Công nghệ Thông tin",
+    "chuyenNganh": [
+      { "tenChuyenNganh": "Kỹ thuật phần mềm", "diemTT": 23, "chuongTrinhDaoTao": { "tongSoTinChi": 145 } },
+      { "tenChuyenNganh": "Khoa học máy tính", "diemTT": 25, "chuongTrinhDaoTao": { "tongSoTinChi": 138 } },
+      { "tenChuyenNganh": "Hệ thống thông tin", "diemTT": 23, "chuongTrinhDaoTao": { "tongSoTinChi": 140 } }
+    ]
+  },
+  {
+    "maKhoa": "DDT",
+    "tenKhoa": "Điện - Điện tử",
+    "chuyenNganh": [
+      { "tenChuyenNganh": "Kỹ thuật Điện tử", "diemTT": 18, "chuongTrinhDaoTao": { "tongSoTinChi": 150 } }
+    ]
+  },
+  {
+    "maKhoa": "CK",
+    "tenKhoa": "Cơ Khí",
+    "chuyenNganh": [
+      { "tenChuyenNganh": "Kỹ thuật Cơ khí", "diemTT": 23, "chuongTrinhDaoTao": { "tongSoTinChi": 135 } }
+    ]
+  }
+]

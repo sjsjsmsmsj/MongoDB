@@ -1,0 +1,20 @@
+[
+  { "maSV": "20075751", "dangKyHP": [
+    { "maHP": "QCS001", "ngayDK": { "$date": "2022-11-01T10:00:00Z" }, "trangThai": "DangKyMoi" },
+    { "maHP": "LPT001", "ngayDK": { "$date": "2022-11-01T11:30:00Z" }, "trangThai": "DangKyHocLai" }
+  ]},
+  { "maSV": "20075752", "dangKyHP": [
+    { "maHP": "QCS001", "ngayDK": { "$date": "2022-12-10T08:00:00Z" }, "trangThai": "DangKyMoi" },
+    { "maHP": "GT001", "ngayDK": { "$date": "2023-01-05T15:00:00Z" }, "trangThai": "DangKyMoi" } 
+  ]},
+  { "maSV": "20075753", "dangKyHP": [
+    { "maHP": "LPT002", "ngayDK": { "$date": "2022-11-05T09:00:00Z" }, "trangThai": "DangKyHocLai" },
+    { "maHP": "LPT002", "ngayDK": { "$date": "2022-11-05T10:00:00Z" }, "trangThai": "DangKyBoSung" } 
+  ]},
+  { "maSV": "20075754", "dangKyHP": [
+    { "maHP": "LTNC01", "ngayDK": { "$date": "2022-10-20T12:00:00Z" }, "trangThai": "DangKyMoi" }
+  ]},
+  { "maSV": "20075760", "dangKyHP": [
+    { "maHP": "GT001", "ngayDK": { "$date": "2021-09-01T10:00:00Z" }, "trangThai": "DangKyMoi" }
+  ]}
+]

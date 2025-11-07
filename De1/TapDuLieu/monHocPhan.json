@@ -1,0 +1,7 @@
+[
+  { "maHP": "QCS001", "tenHP": "Hệ QTCSDL NoSQL MongoDB", "soTC": 3 },
+  { "maHP": "LPT001", "tenHP": "Lập trình Hướng đối tượng", "soTC": 4 },
+  { "maHP": "LPT002", "tenHP": "Lập trình Java Nâng cao", "soTC": 3 },
+  { "maHP": "GT001", "tenHP": "Giải tích 1", "soTC": 3 },
+  { "maHP": "LTNC01", "tenHP": "Lập trình Nhúng", "soTC": 4 }
+]
