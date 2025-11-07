@@ -1,33 +1,35 @@
-# 📚 TÀI LIỆU THỰC HÀNH THI CUỐI KỲ MÔN HỆ QTCSDL NoSQL - MONGODB
+# 📚 [TÊN MÔN HỌC] - TÀI LIỆU THỰC HÀNH THI CUỐI KỲ
 
-Chào mừng bạn đến với bộ tài liệu thực hành được thiết kế dựa trên đề thi cuối kỳ môn **Hệ QTCSDL NoSQL - MongoDB**. Tài liệu này bao gồm đề thi, bộ dữ liệu mẫu (JSON) và các lệnh truy vấn giải đề hoàn chỉnh, giúp bạn ôn tập hiệu quả nhất.
+Đây là bộ tài liệu thực hành được thiết kế để ôn tập cho kỳ thi cuối kỳ môn **[Thay thế bằng Tên Môn học, ví dụ: Hệ QTCSDL NoSQL - MongoDB]**.
+
+Tài liệu này bao gồm đề thi mẫu, bộ dữ liệu mẫu (.json) đã được chuẩn bị, và các lệnh Mongo Shell/Aggregation hoàn chỉnh, giúp bạn ôn tập và kiểm tra các kỹ năng truy vấn nâng cao.
+
+* **Mã đề áp dụng:** [Thay thế bằng Mã đề, ví dụ: 789]
+* **Database mặc định:** MSSV (ví dụ: `23703881`)
 
 ---
 
-## 1. ⚙️ CẤU TRÚC DỰ ÁN
+## 1. 📂 CẤU TRÚC DỰ ÁN
 
-Tài liệu được tổ chức theo cấu trúc sau:
+Tổ chức các file dữ liệu và tài liệu theo cấu trúc sau:
 
 | Tên File/Thư mục | Mô tả |
 | :--- | :--- |
-| `README.md` | File hướng dẫn sử dụng và giới thiệu tổng quan. |
-| `DE_THI.md` | Nội dung chi tiết của đề thi cuối kỳ. |
-| **`data/`** | Thư mục chứa toàn bộ dữ liệu mẫu (.json) để import. |
-| `data/sinhVien.json` | Dữ liệu về sinh viên. |
-| `data/lopHoc.json` | Dữ liệu về lớp học. |
-| `data/monHocPhan.json`| Dữ liệu về môn học phần. |
-| `data/khoa.json` | Dữ liệu về khoa và chuyên ngành (dữ liệu lồng nhau). |
-| `data/dangKyHP.json` | Dữ liệu về đăng ký học phần (dữ liệu lồng nhau và ngày tháng). |
+| `README.md` | Hướng dẫn chung. |
+| `DE_THI.md` | Nội dung chi tiết của đề thi gốc. |
+| **`data/`** | Thư mục chứa các file JSON dữ liệu mẫu. |
+| `data/[collection_1].json` | Dữ liệu cho Collection 1 (ví dụ: `sinhVien.json`). |
+| `data/[collection_2].json` | Dữ liệu cho Collection 2 (ví dụ: `khoa.json`). |
+| `QUERIES.js` | (Tùy chọn) File chứa tất cả các lệnh truy vấn giải đề. |
 
 ---
 
-## 2. 🚀 BẮT ĐẦU THỰC HÀNH (CÂU 1)
+## 2. 🚀 CÀI ĐẶT VÀ IMPORT DỮ LIỆU
 
-**Yêu cầu:** Database sử dụng là **`[MSSV]`** (Ví dụ: `23703881`).
+### 2.1. Thiết lập Database
 
-### 2.1. Chọn Database
-
-Mở Mongo Shell (hoặc MongoDB Compass Shell) và chọn database của bạn:
+Mở Mongo Shell và tạo/chuyển đến database theo mã số sinh viên của bạn:
 
 ```bash
-use 23703881
+use [Thay thế bằng MSSV của bạn] 
+// Ví dụ: use 23703881
