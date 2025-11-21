@@ -1,0 +1,55 @@
+//---------------------------------------//
+Việc triển khai MongoDB ReplicaSet trên nhiều máy khác nhau (mỗi node một máy) yêu cầu cấu hình port và đặc biệt là bindIp 
+để các node có thể giao tiếp qua mạng nội bộ (LAN) hoặc qua IP tĩnh.
+
+//---------------------------------------//
+Cách cấu hình ReplicaSet đa máy (3 node – 3 máy)
+Giả sử có 3 máy như sau:
+
+| Node	| IP máy		| Port	| Vai trò				|
+| node1	| 192.168.1.101	| 27017	| Primary				|
+| node2	| 192.168.1.102	| 27018	| Secondary				|
+| node3	| 192.168.1.103	| 27019	| Secondary / Arbiter	|
+
+
+//--------- 1. Cấu hình Port cho từng node ---------//
++ Node1 (192.168.1.101):
+	net:
+		port: 27017
+		bindIp: 0.0.0.0  //Cho phép kết nối từ các IP khác (quan trọng)
+
++ Node2 (192.168.1.102):
+	net:
+		port: 27018
+		bindIp: 0.0.0.0
+
++ Node3 (192.168.1.103):
+	net:
+		port: 27019
+		bindIp: 0.0.0.0
+
+Ghi chú: port có thể thay đổi nhưng phải đảm bảo các node không trùng port và mở được qua tường lửa.
+
+
+//--------- 2. Mở cổng trên Firewall (trên mỗi máy, nếu cần) ---------//
+Chạy trong CMD với quyền admin:
+
+netsh advfirewall firewall add rule name="MongoDB" dir=in action=allow protocol=TCP localport=27017 //Thay đổi port theo node tương ứng.
+
+
+//--------- 3. Khởi tạo ReplicaSet từ một node ---------//
+Thực hiện khởi tạo theo các bước trong slide
+
+
+//--------- 4. Kiểm tra trạng thái ---------//
+Sau khi init, sử dụng lệnh: rs.status()
+
+Nếu thấy một node chưa “SECONDARY” hoặc “PRIMARY”, hãy kiểm tra:
+- Tường lửa;
+- Thông tin IP;
+
+
+//--------- Lưu ý bổ sung ---------//
+- Dùng IP tĩnh cho các máy, hoặc cấu hình hostname nếu dùng DNS.
+- Các node phải có thể ping và truy cập được lẫn nhau qua IP + port.
+- Có thể dùng mongosh để kiểm tra kết nối thủ công.
