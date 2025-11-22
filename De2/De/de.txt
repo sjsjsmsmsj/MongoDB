@@ -123,11 +123,11 @@ Câu 7 (0.5 điểm)
 
 Viết cấu hình khởi tạo 1 replica set gồm 3 node:
 
-mongo1:27017 – PRIMARY
+mongo1:26112 – PRIMARY
 
-mongo2:27018 – SECONDARY
+mongo2:26110 – SECONDARY
 
-mongo3:27019 – ARBITER
+mongo3:26110 – ARBITER
 
 Câu 8 (0.5 điểm)
 
