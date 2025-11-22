@@ -1,0 +1,20 @@
+[
+  {
+    "departmentId": "D001",
+    "name": "Computer Science",
+    "school": "Engineering",
+    "head": "LC001"
+  },
+  {
+    "departmentId": "D002",
+    "name": "Business Administration",
+    "school": "Economics",
+    "head": "LC003"
+  },
+  {
+    "departmentId": "D003",
+    "name": "Biotechnology",
+    "school": "Life Science",
+    "head": "LC002"
+  }
+]

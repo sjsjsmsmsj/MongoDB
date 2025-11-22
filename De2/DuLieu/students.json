@@ -1,0 +1,38 @@
+[
+  {
+    "studentId": "ST1001",
+    "fullName": "Pham Minh Khang",
+    "gender": "Male",
+    "entryYear": 2020,
+    "departmentId": "D001",
+    "scholarship": 30,
+    "campus": "North"
+  },
+  {
+    "studentId": "ST1002",
+    "fullName": "Nguyen Thi Lan",
+    "gender": "Female",
+    "entryYear": 2021,
+    "departmentId": "D002",
+    "scholarship": 0,
+    "campus": "South"
+  },
+  {
+    "studentId": "ST1003",
+    "fullName": "Le Hoang Gia",
+    "gender": "Male",
+    "entryYear": 2019,
+    "departmentId": "D001",
+    "scholarship": 50,
+    "campus": "Central"
+  },
+  {
+    "studentId": "ST1004",
+    "fullName": "Tran My Duyen",
+    "gender": "Female",
+    "entryYear": 2022,
+    "departmentId": "D003",
+    "scholarship": 10,
+    "campus": "South"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "lecturerId": "LC001",
+    "fullName": "Hoang Quoc Viet",
+    "rank": "Professor",
+    "departmentId": "D001",
+    "courses": ["C101"]
+  },
+  {
+    "lecturerId": "LC002",
+    "fullName": "Le Ngoc Bich",
+    "rank": "Associate Professor",
+    "departmentId": "D003",
+    "courses": ["C301"]
+  },
+  {
+    "lecturerId": "LC003",
+    "fullName": "Pham Minh Anh",
+    "rank": "Senior Lecturer",
+    "departmentId": "D002",
+    "courses": ["C201"]
+  }
+]

@@ -1,0 +1,196 @@
+📌 PHẦN A – Aggregation nâng cao (6 điểm)
+
+Dùng các collection:
+
+students
+
+departments
+
+courses
+
+enrollments
+
+lecturers
+
+campuses
+
+Câu 1 (1 điểm)
+
+Tính GPA cho mỗi sinh viên theo công thức:
+
+score = midterm * 0.4 + final * 0.6
+GPA = trung bình score trên tất cả các môn đã học
+
+
+Hiển thị:
+
+studentId
+
+fullName
+
+numberOfCourses
+
+GPA
+
+rank (XuatSac, Gioi, Kha, TrungBinh, Yeu)
+
+Câu 2 (1 điểm)
+
+Thống kê tổng số sinh viên, số lượng sinh viên có học bổng theo từng khoa.
+
+Kết quả hiển thị:
+
+departmentId
+
+tenKhoa
+
+soSinhVien
+
+soSinhVienCoHocBong
+
+%SinhVienCoHocBong
+
+Sắp xếp theo %SinhVienCoHocBong giảm dần.
+
+Câu 3 (1 điểm)
+
+Danh sách top 3 môn học có điểm trung bình cao nhất, tính theo tất cả sinh viên đã học.
+
+Hiển thị:
+
+courseId
+
+title
+
+averageScore
+
+soSinhVienHoc
+
+Câu 4 (1 điểm)
+
+Cho biết giảng viên có điểm trung bình môn giảng dạy cao nhất (tính điểm của sinh viên học môn đó).
+
+Hiển thị:
+
+lecturerId
+
+fullName
+
+courseId
+
+courseTitle
+
+averageScore
+
+Câu 5 (1 điểm)
+
+Thống kê số lượng sinh viên theo campus (North/Central/South), kèm tổng học bổng của từng vùng.
+
+Hiển thị:
+
+campus
+
+soSinhVien
+
+tongHocBong
+
+Câu 6 (1 điểm)
+
+Xuất danh sách môn học mà sinh viên có GPA ≥ 7.0 đã học, gồm:
+
+studentId
+
+fullName
+
+GPA
+
+coursesTaken: [courseId, title, score]
+
+Gợi ý:
+Cần:
+
+tính GPA
+
+lookup courses
+
+ghép dữ liệu enrollments
+
+📌 PHẦN B – Replication (2 điểm)
+
+Giả sử bạn cần triển khai Replica Set cho database university_pro.
+
+Câu 7 (0.5 điểm)
+
+Viết cấu hình khởi tạo 1 replica set gồm 3 node:
+
+mongo1:27017 – PRIMARY
+
+mongo2:27018 – SECONDARY
+
+mongo3:27019 – ARBITER
+
+Câu 8 (0.5 điểm)
+
+Trong tình huống PRIMARY bị mất kết nối 10 giây:
+
+Điều gì xảy ra với replica set?
+
+SECONDARY có lên làm PRIMARY không?
+
+Khi PRIMARY cũ quay lại, nó có trở lại làm PRIMARY không? Giải thích.
+
+Câu 9 (1 điểm)
+
+Viết lệnh:
+
+Thêm một secondary mới vào replica set
+
+Chỉ định secondary này chỉ dùng cho đọc
+
+Thiết lập ưu tiên để node này không bao giờ trở thành PRIMARY
+
+📌 PHẦN C – Sharding (2 điểm)
+
+Dùng dataset có campus, zone, departmentId → rất phù hợp để sharding.
+
+Câu 10 (0.5 điểm)
+
+Thiết lập cấu hình Sharding:
+
+1 mongos
+
+2 shard server:
+
+shard01
+
+shard02
+
+1 config server replica set (3 node)
+
+Yêu cầu: mô tả cấu trúc thư mục + command khởi chạy.
+
+Câu 11 (0.5 điểm)
+
+Trong database university_pro, bật sharding và shard collection students theo key:
+
+{ campus: 1 }
+
+
+Viết câu lệnh đầy đủ.
+
+Câu 12 (1 điểm)
+
+Giải thích:
+
+Tại sao chọn shard theo campus là hợp lý với dataset này?
+
+Nếu dataset mở rộng lên 500,000 sinh viên:
+
+Campus South = 300,000
+
+Campus North = 140,000
+
+Campus Central = 60,000
+
+→ Shard key này có gây mất cân bằng không?
+→ Cách giải quyết?

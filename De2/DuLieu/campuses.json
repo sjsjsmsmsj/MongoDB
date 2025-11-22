@@ -1,0 +1,6 @@
+[
+  { "campus": "North", "address": "Hanoi", "zone": 1 },
+  { "campus": "Central", "address": "Da Nang", "zone": 2 },
+  { "campus": "South", "address": "Ho Chi Minh City", "zone": 3 },
+  { "campus": "South", "address": "Binh Dinh", "zone": 4 }
+]

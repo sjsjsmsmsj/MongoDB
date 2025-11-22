@@ -1,0 +1,30 @@
+[
+  {
+    "courseId": "C101",
+    "title": "Distributed Systems",
+    "credits": 4,
+    "type": "Major",
+    "departmentId": "D001"
+  },
+  {
+    "courseId": "C102",
+    "title": "Data Mining",
+    "credits": 3,
+    "type": "Major",
+    "departmentId": "D001"
+  },
+  {
+    "courseId": "C201",
+    "title": "Microeconomics",
+    "credits": 3,
+    "type": "General",
+    "departmentId": "D002"
+  },
+  {
+    "courseId": "C301",
+    "title": "Genetics",
+    "credits": 4,
+    "type": "Major",
+    "departmentId": "D003"
+  }
+]

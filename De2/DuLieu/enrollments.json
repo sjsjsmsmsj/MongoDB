@@ -1,0 +1,32 @@
+[
+  {
+    "studentId": "ST1001",
+    "courseId": "C101",
+    "semester": "2022A",
+    "scores": { "midterm": 7.5, "final": 8.0 }
+  },
+  {
+    "studentId": "ST1001",
+    "courseId": "C102",
+    "semester": "2022A",
+    "scores": { "midterm": 7.0, "final": 7.5 }
+  },
+  {
+    "studentId": "ST1002",
+    "courseId": "C201",
+    "semester": "2022A",
+    "scores": { "midterm": 8.5, "final": 9.0 }
+  },
+  {
+    "studentId": "ST1003",
+    "courseId": "C101",
+    "semester": "2022A",
+    "scores": { "midterm": 6.0, "final": 6.5 }
+  },
+  {
+    "studentId": "ST1004",
+    "courseId": "C301",
+    "semester": "2022B",
+    "scores": { "midterm": 8.0, "final": 7.0 }
+  }
+]
